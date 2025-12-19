@@ -9,7 +9,7 @@
     <h6 class="card-title">{{recipe.author}} </h6>
     <p class="card-text">{{recipe.description}}</p>
     <h6 class="card-title">{{recipe.updated_at | date:"F d, Y"}} </h6>
-    <a href="#" class="btn btn-primary">View Recipe</a>
+    <a href="{% url 'recipes-detail' recipe.pk %}" class="btn btn-primary">View Recipe</a>
   </div>
 </div>
     {% endfor %}
